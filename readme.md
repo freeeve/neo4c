@@ -1,5 +1,5 @@
 ## neo4j-c-driver
-A driver for neo4j for C, which uses the REST protocol. It is far from complete; development began 9/1/2012. 
+A driver for neo4j for C, which uses the REST protocol. *It is far from complete--in fact, it's not even usable in an unstable manner, yet; development began 9/1/2012.* 
 The goals of the library are to provide some wrappers to libcurl and a json library to allow neo4j-specific
 utility functions.
 
