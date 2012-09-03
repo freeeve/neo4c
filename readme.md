@@ -4,7 +4,8 @@ The goals of the library are to provide some wrappers to libcurl and a json libr
 utility functions.
 
 ### dependencies
-libcurl >= 7.15
-json-c >= 0.9 (this might go away or change--still playing with it)
-libcheck >= 0.9 (for `make check` unit tests)
+
+* libcurl >= 7.15
+* json-c >= 0.9 (this might go away or change--still playing with it)
+* libcheck >= 0.9 (for `make check` unit tests)
 
