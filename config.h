@@ -4,6 +4,9 @@
 /* Define to 1 if you have the <check.h> header file. */
 #define HAVE_CHECK_H 1
 
+/* Define to 1 if you have the <curl/curl.h> header file. */
+#define HAVE_CURL_CURL_H 1
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
@@ -15,6 +18,9 @@
 
 /* Define to 1 if you have the `check' library (-lcheck). */
 #define HAVE_LIBCHECK 1
+
+/* Define to 1 if you have the `curl' library (-lcurl). */
+#define HAVE_LIBCURL 1
 
 /* Define to 1 if you have the `json' library (-ljson). */
 /* #undef HAVE_LIBJSON */

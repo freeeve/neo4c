@@ -171,7 +171,7 @@ target_alias = @target_alias@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 check_libneo4j_SOURCES = check_libneo4j.c
-AM_CPPFLAGS = -lcheck
+AM_CPPFLAGS = -lcheck -ljson -lcurl
 all: all-am
 
 .SUFFIXES:

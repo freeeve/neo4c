@@ -13,11 +13,13 @@ AC_PROG_LIBTOOL
 # Checks for libraries.
 AC_CHECK_LIB([json],[json])
 AC_CHECK_LIB([check],[srunner_create])
+AC_CHECK_LIB([curl],[curl_easy_init])
 
 # Checks for header files.
 AC_HEADER_STDC
 AC_CHECK_HEADERS([stddef.h stdlib.h string.h])
 AC_CHECK_HEADERS([json/json.h])
+AC_CHECK_HEADERS([curl/curl.h])
 AC_CHECK_HEADERS([check.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
