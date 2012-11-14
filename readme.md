@@ -1,5 +1,5 @@
 ## neo4c
-**I see what you did there... you changed the `j` to a `c`...** No, this is not neo4j written in C...
+**I see what you did there... you changed the `j` to a `c`...** No, this is not neo4j rewritten in C...
 
 A *driver* for neo4j for C, which uses the REST protocol, focusing on Cypher support. *It is far from complete--in fact, 
 it's not even usable in an unstable manner, yet.*
