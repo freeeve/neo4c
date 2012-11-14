@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
 
   // create a cypher query
   char *query = "start n=node(*) return n";
-  neo_query(&conn, &cursor, query);
+  neo_rest_query(&conn, &cursor, query);
 
   // need to remember to clean up your stuff
   neo_cursor_destroy(&cursor);
