@@ -7,6 +7,7 @@ The goals of the library are to provide some wrappers to libcurl and a json libr
 utility functions.
 
 ### usage
+
 #### a quick example
 ```C
 #include <neo4c.h>
@@ -18,12 +19,27 @@ int main(int argc, char **argv) {
 
   // create a cypher query
   char *query = "start n=node(*) return n";
+
+  // execute the query and return a cursor to the results
   neo_rest_query(&conn, &cursor, query);
 
   // need to remember to clean up your stuff
   neo_cursor_destroy(&cursor);
   neo_rest_destroy(&conn);
 }
+```
+
+#### query parameters
+```C
+  // set an id...
+  uint64_t id = 1;
+
+  // printf style parameter setting
+  char *query = "start n=node({id}) return n;"
+  
+  // the parameters must be in the order they are in the query
+  // if anyone has a good C syntax for map support, please let me know
+  neo_rest_query(&conn, &cursor, query, id)
 ```
 
 ### dependencies
