@@ -1,7 +1,29 @@
-## neo4j-c-driver
-A driver for neo4j for C, which uses the REST protocol. *It is far from complete--in fact, it's not even usable in an unstable manner, yet; development began 9/1/2012.* 
+## neo4c
+**I see what you did there... you changed the `j` to a `c`...** No, this is not neo4j written in C...
+
+A *driver* for neo4j for C, which uses the REST protocol, focusing on Cypher support. *It is far from complete--in fact, 
+it's not even usable in an unstable manner, yet.*
 The goals of the library are to provide some wrappers to libcurl and a json library to allow neo4j-specific
 utility functions.
+
+### usage
+#### a quick example
+```C
+#include <neo4c.c>
+
+int main(int argc, char **argv) {
+  // create a neo_rest connection
+  neo_rest conn;
+  neo_cursor cursor;
+
+  // create a cypher query
+  char *query = "start n=node(*) return n";
+  neo_query(&conn, &cursor, query);
+
+  neo_cursor_destroy(&cursor);
+  neo_rest_destroy(&conn);
+}
+```
 
 ### dependencies
 * libcurl >= 7.15
