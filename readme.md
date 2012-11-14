@@ -9,7 +9,7 @@ utility functions.
 ### usage
 #### a quick example
 ```C
-#include <neo4c.c>
+#include <neo4c.h>
 
 int main(int argc, char **argv) {
   // create a neo_rest connection
