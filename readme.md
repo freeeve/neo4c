@@ -20,6 +20,7 @@ int main(int argc, char **argv) {
   char *query = "start n=node(*) return n";
   neo_query(&conn, &cursor, query);
 
+  // need to remember to clean up your stuff
   neo_cursor_destroy(&cursor);
   neo_rest_destroy(&conn);
 }
