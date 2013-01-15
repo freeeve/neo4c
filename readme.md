@@ -35,12 +35,12 @@ int main(int argc, char **argv) {
   uint64_t id = 1;
 
   // printf style parameter setting
-  char *query = "start n=node({id}) return n;"
+  char *query = "start n=node({id}) return n;";
   
   // currently, the parameters must be in the order they are in the query
   // this seems idiomatic for C people, but...
   // if anyone has a good C syntax for map support, please let me know
-  neo_rest_query(&conn, &cursor, query, id)
+  neo_rest_query(&conn, &cursor, query, id);
 ```
 
 ### dependencies
