@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.61)
 AC_INIT(libneo4c, 0.1, wes@skeweredrook.com)
-AC_CONFIG_SRCDIR([src/libneo4c.c])
+AC_CONFIG_SRCDIR([src])
 AC_CONFIG_HEADER([config.h])
 
 # Checks for programs.

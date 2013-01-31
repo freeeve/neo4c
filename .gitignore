@@ -23,3 +23,8 @@ test/Makefile
 test/check_libneo4c
 test/check_libneo4c.log
 test/check_neo4c.log
+Makefile.in
+config.h
+config.h.in
+src/Makefile.in
+test/Makefile.in

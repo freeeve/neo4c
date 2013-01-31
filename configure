@@ -749,7 +749,7 @@ PACKAGE_VERSION='0.1'
 PACKAGE_STRING='libneo4c 0.1'
 PACKAGE_BUGREPORT='wes@skeweredrook.com'
 
-ac_unique_file="src/libneo4c.c"
+ac_unique_file="src"
 # Factoring default headers for most tests.
 ac_includes_default="\
 #include <stdio.h>

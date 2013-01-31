@@ -11,6 +11,7 @@ utility functions.
 #### a quick example
 ```C
 #include <neo4c.h>
+#include <stdbool.h>
 
 int main(int argc, char **argv) {
   // create a neo_rest connection
@@ -21,7 +22,7 @@ int main(int argc, char **argv) {
   char *query = "start n=node(*) return n";
 
   // execute the query and return a cursor to the results
-  neo_rest_query(&conn, &cursor, query);
+  bool ret = neo_rest_query(&conn, &cursor, query);
 
   // need to remember to clean up your stuff
   neo_cursor_destroy(&cursor);
@@ -45,6 +46,6 @@ int main(int argc, char **argv) {
 
 ### dependencies
 * libcurl >= 7.15
-* json-c >= 0.9 (this might go away or change--still playing with it)
-* libcheck >= 0.9 (for `make check` unit tests)
+* libjson-c >= 0.10
+* libcheck >= 0.9.4 (for `make check` unit tests)
 
