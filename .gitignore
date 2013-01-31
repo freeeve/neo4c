@@ -20,5 +20,6 @@ src/Makefile
 stamp-h1
 test/.deps/
 test/Makefile
-test/check_libneo4j
-test/check_neo4j_c.log
+test/check_libneo4c
+test/check_libneo4c.log
+test/check_neo4c.log

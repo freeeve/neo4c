@@ -1,3 +1,3 @@
-lib_LTLIBRARIES = libneo4j.la
-libneo4j_la_SOURCES = libneo4j.c
-AM_CPPFLAGS = -ljson -lcurl
+lib_LTLIBRARIES = libneo4c.la
+libneo4c_la_SOURCES = libneo4c.c
+AM_CPPFLAGS = -ljson-c -lcurl
