@@ -6,6 +6,8 @@ it's not even usable in an unstable manner, yet.*
 The goals of the library are to provide some wrappers to libcurl and a json library to allow neo4j-specific
 utility functions.
 
+[![Build Status](https://travis-ci.org/wfreeman/neo4c.png)](https://travis-ci.org/wfreeman/neo4c)
+
 ### usage
 
 #### a quick example
