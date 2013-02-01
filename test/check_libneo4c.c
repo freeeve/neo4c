@@ -29,7 +29,7 @@ START_TEST(rest_simple)
   char *query = "start n=node(*) return n";
   bool ret = neo_rest_query(&conn, &cursor, query);
   fail_unless(ret==true, "return value is false");
-  neo_cursor_add_result(&cursor, NULL);
+  //neo_cursor_add_result(&cursor, NULL);
   while(neo_cursor_has_next(&cursor) == true) 
   {
     bool cursor_ret = neo_cursor_next(&cursor);
