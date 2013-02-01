@@ -9,6 +9,7 @@
 bool
 neo_cursor_has_next(neo_cursor *cursor)
 {
+  printf("%d\n", cursor->next != NULL);
   return cursor->next != NULL;
 }
 
