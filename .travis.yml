@@ -2,7 +2,7 @@ language: c
 compiler: gcc
 before_install:
  - sudo apt-get update -qq
- - sudo apt-get install -qq [check check-dev]
+ - sudo apt-get install -qq check check-dev libjson-c libcurl
 script: 
   - "./autogen.sh"
   - "./configure"
