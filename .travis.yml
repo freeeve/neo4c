@@ -3,10 +3,17 @@ compiler: gcc
 before_install:
  - sudo apt-get update -qq
  - sudo apt-get install -qq check libjson0 libjson0-dev curl
+ - git clone https://github.com/json-c/json-c.git
+ - cd json-c
+ - sh autogen.sh
+ - ./configure
+ - make
+ - sudo make install
+ - cd ..
 script: 
-  - "./autogen.sh"
-  - "./configure"
-  - "make check"
+ - ./autogen.sh
+ - ./configure
+ - make check
 notifications:
-  email:
-    - freeman.wes@gmail.com
+ email:
+  - freeman.wes@gmail.com
