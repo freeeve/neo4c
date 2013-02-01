@@ -1,7 +1,9 @@
 language: c
 compiler: gcc
+before_install:
+ - sudo apt-get update -qq
+ - sudo apt-get install -qq [check check-dev]
 script: 
-  - "yum install check check-devel"
   - "./autogen.sh"
   - "./configure"
   - "make check"
