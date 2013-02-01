@@ -1,6 +1,7 @@
 language: c
 compiler: gcc
 script: 
+  - "yum install check check-devel"
   - "./autogen.sh"
   - "./configure"
   - "make check"
