@@ -23,7 +23,7 @@ bool
 neo_cursor_next(neo_cursor *cursor) {
   neo_elem *tmp = cursor->head;
   cursor->head = cursor->head->next;
-  neo_elem_free(&tmp);
+  neo_elem_free(tmp);
   return true;
 }
 
