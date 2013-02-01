@@ -28,17 +28,21 @@ START_TEST(rest_simple)
 
   char *query = "start n=node(*) return n";
   bool ret = neo_rest_query(&conn, &cursor, query);
-  fail_unless(ret==true, "return value is false");
-  //neo_cursor_add_result(&cursor, NULL);
+  fail_unless(ret == true, "return value is false");
+  neo_cursor_add_result(&cursor, NULL);
+  neo_cursor_add_result(&cursor, NULL);
+  int count = 0;
   while(neo_cursor_has_next(&cursor) == true) 
   {
     bool cursor_ret = neo_cursor_next(&cursor);
     fail_unless(cursor_ret == true, "cursor return value is false");
-
+    count++;
     // get data...
   }
+  fail_unless(count == 2, "didn't have the right count");
+
   fail_unless(neo_cursor_has_next(&cursor) == false, "cursor has next after loop");
-  fail_unless(ret==true, "return value is false");
+  fail_unless(ret == true, "return value is false");
 }
 END_TEST
 
