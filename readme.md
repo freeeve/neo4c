@@ -1,4 +1,7 @@
 ## neo4c
+
+### this was barely started, please check out a newer protocol and c library: [https://github.com/majensen/libneo4j-omni](https://github.com/majensen/libneo4j-omni)
+
 **I see what you did there... you changed the `j` to a `c`...** No, this is not neo4j rewritten in C...
 
 A *driver* for neo4j for C, which uses the REST protocol, focusing on Cypher support. *It is far from complete--in fact, 
